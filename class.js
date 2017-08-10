@@ -74,7 +74,7 @@ function Gselper(/** Object */ p_option) {
         // worksheet required too
         if(option.worksheet == "" || typeof option.worksheet != "string") return false;
         
-        var docUrl = "http://spreadsheets.google.com/feeds/list/"+option.key+"/"+option.worksheet+"/public/values?alt=json&callback=?";        
+        var docUrl = "https://spreadsheets.google.com/feeds/list/"+option.key+"/"+option.worksheet+"/public/values?alt=json&callback=?";        
         $.getJSON(docUrl, function(p_document) {
         
             // store the document
